@@ -19,8 +19,8 @@ public class P8 {
 		
 		int result = -999999;
 		
-		for(int i=0; i<s.length - 3; i++) {
-			result = Math.max(result, s[i]*s[i+1]*s[i+2]*s[i+3]);
+		for(int i = 0; i < s.length - 3; i++) {
+			result = Math.max(result, s[i] * s[i+1] * s[i+2] * s[i+3]);
 		}
 		System.out.println(result);
 		sc.close();
