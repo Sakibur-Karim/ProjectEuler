@@ -17,10 +17,12 @@ public class P8 {
 			}
 		}
 		
-		int result = -999999;
+		long result = -9;
 		
-		for(int i = 0; i < s.length - 3; i++) {
-			result = Math.max(result, s[i] * s[i+1] * s[i+2] * s[i+3]);
+		for(int i = 0; i < s.length - 12; i++) {
+			result = Math.max(result, (long) s[i] * s[i+1] * s[i+2] * s[i+3] * s[i+4]
+					* s[i+5] * s[i+6] * s[i+7] * s[i+8] * s[i+9] * s[i+10]
+					* s[i+11] * s[i+12]);
 		}
 		System.out.println(result);
 		sc.close();
